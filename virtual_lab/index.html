@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control Virtual Lab</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/mathjs@11.11.0/lib/browser/math.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+</head>
+<body>
+<h1>Control System Virtual Lab</h1>
+<div class="input-section">
+<label>Numerator Coefficients (highest power first):</label>
+<input type="text" id="num" value="1">
+<br>
+<label>Denominator Coefficients (highest power first):</label>
+<input type="text" id="den" value="1,1">
+<br>
+<label>PID Gains (Kp, Ki, Kd):</label>
+<input type="text" id="pid" value="1,0,0">
+<br>
+<button onclick="checkStability()">Check Stability</button>
+<button onclick="showRouth()">Routh Table</button>
+<button onclick="plotRootLocus()">Root Locus</button>
+<button onclick="plotBode()">Bode Plot</button>
+<button onclick="pidResponse()">PID Step Response</button>
+<button onclick="steadyStateError()">Steady-State Error</button>
+</div>
+<div id="output"></div>
+<div id="plot" style="width:100%;height:500px;"></div>
+<script src="script.js"></script>
+</body>
+</html>

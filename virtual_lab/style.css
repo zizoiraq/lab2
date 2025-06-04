@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f0f0f0;
+}
+.input-section label {
+    display: inline-block;
+    width: 300px;
+    margin-top: 5px;
+}
+.input-section input {
+    width: 200px;
+}
+button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+#output {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
